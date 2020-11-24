@@ -1,0 +1,6 @@
+arjun@arjun-Legion-Y545-PG0:~/catkin_ws/src/arjun/explorer_robot$ cpplint $( find . -name \*.hpp -or -name \*.cpp | grep -vE -e "^./build/" -e "^./vendor/" -e "^./data" )
+Done processing ./include/explorerBot.hpp
+Done processing ./src/explorerBot.cpp
+Done processing ./src/main.cpp
+
+
