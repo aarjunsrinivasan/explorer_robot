@@ -1,5 +1,7 @@
-# explorer_robot
+# Explorer_robot
+[![License MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/aarjunsrinivasan/explorer_robot/blob/Week12_HW/License)
 Autonomous exploration robot demo using turtlebot3
+
 
 ## Authors
 
