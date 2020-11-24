@@ -14,11 +14,12 @@ Roomba like vacuum cleaner that performs the basic functionality of autnomous na
 An example of obstacle avoidance in ROS for a turtlebot simulated in Gazebo. The world here is turtlebot_world in which if any of the objects are moved and placed in front of the turtlebot, it will move around and start autonomously again. A launch file is made to start the nodes at once. Also, ROSBag is used to examine the output from the topics using an argument in launch file.
 
 ## Dependencies	
-1. ROS Kinetic - [Installation](http://wiki.ros.org/melodic/Installation/Ubuntu)
+1. ROS Melodic - [Installation](http://wiki.ros.org/melodic/Installation/Ubuntu)
 2. Catkin(installed by default with ROS) - a low level build system macros and infrastructure for ROS.
 3. Gazebo - [Gazebo Installation](http://gazebosim.org/tutorials?tut=ros_installing)
-4. Turtlebot - [Turtlebot Package Installation](https://github.com/ROBOTIS-GIT/turtlebot3)
-5. ROS libraries - roscpp, geometry_msgs, sensor_msgs
+4. Turtlebot3 - [Turtlebot Package Installation](https://github.com/ROBOTIS-GIT/turtlebot3)
+5. Turtlebot3 Gazebo package - [Turtlebot Package Installation](https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git)
+6. ROS libraries - roscpp, geometry_msgs, sensor_msgs
 
 ## Build
 Build using the following commands-
