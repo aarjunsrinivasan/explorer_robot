@@ -1,0 +1,22 @@
+<launch>  
+  <arg name="rosbagRecord" default="false" />
+ <arg name="model" default="burger" doc="model type [burger, waffle, waffle_pi]"/>
+  <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_world.launch">
+  </include>
+
+  <node
+    pkg="explorer_robot"
+    type="explorerBot"
+    name="explorerBot"
+    output="screen"
+    launch-prefix="gnome-terminal --command"
+  />
+  <node
+    pkg="rosbag"
+    type="record"
+    name="record"
+    args="-a -O $(find explorer_robot)/results/recording.bag -x /camera/(.*) --duration=30"
+    if="$(arg rosbagRecord)"
+  />
+
+</launch>
